@@ -1,0 +1,309 @@
+/* FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/* GENEREL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  background: hsl(185, 75%, 39%);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* MAIN BACKGROUND START */
+
+.bg-top {
+  width: 80%;
+  height: fit-content;
+  position: absolute;
+  top: -35em;
+  left: -19em;
+}
+
+.bg-top img {
+  width: 90%;
+}
+
+.bg-bottom {
+  width: 80%;
+  height: fit-content;
+  position: absolute;
+  bottom: -46em;
+  right: -23em;
+}
+
+.bg-bottom img {
+  width: 90%;
+}
+
+/* MAIN BACKGROUND END */
+
+/* HERO SECTION START */
+
+.card {
+  width: 400px;
+  height: 390px;
+  position: relative;
+  border-radius: 1.2em;
+  top: 10em;
+  left: 35em;
+  background: white;
+  box-shadow: 0px 15px 90px rgb(21, 20, 20, 0.4);
+}
+
+.card-top {
+  border-radius: 1.2em 1.2em 0 0;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top: 0;
+  background: url(../images/bg-pattern-card.svg);
+}
+
+.card-img {
+  position: absolute;
+  top: 6em;
+  left: 9.8em;
+  border-radius: 50px;
+  border: 7px solid white;
+  width: 25%;
+}
+
+/* PROFILE START */
+
+.profile {
+  position: absolute;
+  text-align: center;
+  top: 13em;
+  left: 5.4em;
+}
+
+.profile h1 {
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  margin-left: 3em;
+  margin-top: 0.2em;
+}
+
+.profile span {
+  color: hsl(0, 0%, 59%);
+  margin-left: 0.5em;
+}
+
+.profile p {
+  margin-top: 1.1em;
+  margin-left: 3em;
+  color: hsl(0, 0%, 59%);
+}
+
+/* PROFILE END */
+
+/* STAT START */
+
+.stats {
+  position: absolute;
+  width: 100%;
+  height: 23%;
+  bottom: 0;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top: 4px solid #ebebeb;
+}
+
+.stat-info {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 2.3em;
+}
+
+.stat-numbers {
+  text-align: center;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+}
+
+.stat-title {
+  text-align: center;
+  font-size: 15px;
+  color: hsl(0, 0%, 59%);
+}
+
+.stats ul {
+  list-style-type: none;
+}
+
+.stats ul li {
+  padding-top: 25px;
+}
+
+/* WEBSITE SUBMISSION */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 38em;
+  font-size: 15px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* AJUSTMENTS */
+
+@media screen and (max-width: 1180px) {
+  .card {
+    left: 25em;
+  }
+
+  .attribution {
+    left: 28em;
+  }
+
+  .bg-top {
+    top: -30em;
+    left: -19em;
+  }
+  .bg-top img {
+    width: 90%;
+  }
+
+  .bg-bottom {
+    width: 80%;
+    height: fit-content;
+    position: absolute;
+    bottom: -35em;
+    right: -23em;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .card {
+    left: 20em;
+  }
+
+  .attribution {
+    left: 22em;
+  }
+
+  .bg-top {
+    top: -20em;
+    left: -19em;
+  }
+  .bg-bottom {
+    bottom: -30em;
+    right: -23em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    left: 13em;
+  }
+
+  .attribution {
+    left: 15em;
+  }
+
+  .bg-top {
+    top: -15em;
+    left: -8em;
+  }
+  .bg-bottom {
+    bottom: -18em;
+    right: -18em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    left: 10em;
+  }
+
+  .attribution {
+    left: 15em;
+  }
+
+  .bg-top {
+    top: -15em;
+    left: -8em;
+  }
+  .bg-bottom {
+    bottom: -18em;
+    right: -18em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    left: 9em;
+  }
+
+  .attribution {
+    left: 10em;
+  }
+
+  .bg-top {
+    top: -15em;
+    left: -3em;
+  }
+  .bg-bottom {
+    bottom: -13em;
+    right: -14em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    left: 6em;
+  }
+
+  .attribution {
+    left: 7em;
+  }
+
+  .bg-top {
+    top: -10em;
+    left: -6em;
+  }
+  .bg-bottom {
+    bottom: -10em;
+    right: -14em;
+  }
+}
+
+/* MOBILE STYLES */
+
+@media screen and (max-width: 560px) {
+  .card {
+    left: 4.5em;
+  }
+
+  .attribution {
+    left: 6em;
+  }
+
+  .bg-top {
+    width: 100%;
+    top: -18em;
+    left: -12em;
+  }
+  .bg-bottom {
+    width: 100%;
+    bottom: -9em;
+    right: -19em;
+  }
+}
